@@ -229,14 +229,19 @@ body {
   color: var(--accent-color);
 }
 
+.section-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-black);
+}
+
 @media screen and (min-width: 1200px) {
   .section-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
   }
 }
 .backdrop {
@@ -424,6 +429,16 @@ body {
   background: var(--accent-color);
   border: none;
   border-radius: 4px;
+}
+
+.group-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-black);
 }
 
 .page-header {
@@ -822,6 +837,66 @@ body {
     background: rgba(47, 48, 58, 0.8);
   }
 }
+.team-section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  background-color: var(--bg-color);
+}
+
+.team-title {
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-color);
+}
+
+.team-img {
+  width: 450px;
+  height: 460px;
+}
+
+.img-inf-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+.team-img-title {
+  margin-bottom: 10px;
+}
+
+.team-img-text {
+  margin-bottom: 16px;
+  color: var(--grey-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.team-icon-link {
+  width: 44px;
+  height: 44px;
+  fill: var(--icon-color);
+  border-radius: 50%;
+  transition: background-color var(--trans-dur-time-fun), fill var(--trans-dur-time-fun);
+}
+.team-icon-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+}
+
 .clients-section {
   margin-left: auto;
   margin-right: auto;
