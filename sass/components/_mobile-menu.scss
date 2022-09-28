@@ -5,12 +5,28 @@
   z-index: 100;
   width: 100%;
   height: 100%;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
   background-color: var(--white-color);
+
+  transition: opacity var(--trans-dur-time-fun),
+    visibility var(--trans-dur-time-fun), transform var(--trans-dur-time-fun);
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: none;
+  transform: translateX(-100%);
 }
 
 .mobile-menu-container {
   position: relative;
   padding: 40px 48px;
+  height: 100%;
 }
 
 .mobile-menu__close-btn {
@@ -26,6 +42,14 @@
 .mobile-menu__close-icon {
   width: 40px;
   height: 40px;
+}
+
+.mobile-menu-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
 }
 
 .mobile-menu-navigation-list {
@@ -70,6 +94,7 @@
   display: flex;
   flex-direction: column;
   gap: 34px;
+  margin-bottom: 64px;
 }
 
 .mobile-menu-contacts-list__tel {
@@ -93,6 +118,15 @@
   gap: 20px;
 }
 
+// .mobile-menu-messengers-list__item:not(:last-child) {
+//   border-right: 1px solid rgba(33, 33, 33, 0.2);
+//   padding-right: 5px;
+// }
+
+// .mobile-menu-messengers-list__item:not(:first-child) {
+//   padding-left: 5px;
+// }
+
 .mobile-menu-messengers-list__link {
   position: relative;
   font-weight: 500;
@@ -100,19 +134,18 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
 
-  &::after {
-    content: "";
+.mobile-menu-messengers-list__link::after {
+  content: "";
 
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
 
-    width: 22px;
-    height: 0px;
+  top: 0;
+  right: -10px;
+  width: 1px;
+  height: 100%;
 
-    border: 0.2px solid rgba(33, 33, 33, 0.2);
-    background-color: rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
-  }
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: rgba(33, 33, 33, 0.2);
 }
