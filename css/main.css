@@ -622,43 +622,7 @@ body {
   }
 }
 .hero {
-  background-color: var(--hero-bg-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-  max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
-}
-
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  color: var(--white-color);
-  text-transform: uppercase;
-  max-width: 696px;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.hero-btn {
-  max-width: 216px;
-  padding: 10px 30px;
-  transition: background-color var(--trans-dur-time-fun);
-}
-.hero-btn:hover, .hero-btn:focus {
-  background-color: var(--btn-active);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4)), rgba(47, 48, 58, 0.4), url(../../images/h);
 }
 
 .features-section {
