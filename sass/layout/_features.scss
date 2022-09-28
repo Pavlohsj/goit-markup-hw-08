@@ -36,7 +36,28 @@
   letter-spacing: 0.03em;
 }
 
-// .features-section {
+@media screen and (min-width: 768px) {
+  .features-section__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .features-section__item {
+    max-width: 354px;
+  }
+
+  .features-section__icon {
+    width: 354px;
+  }
+
+  .features-section__title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  // .features-section {
 //   padding-top: 92px;
 //   padding-bottom: 92px;
 // }
@@ -78,3 +99,5 @@
 //   line-height: 1.71;
 //   letter-spacing: 0.03em;
 // }
+
+

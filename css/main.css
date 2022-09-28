@@ -668,7 +668,6 @@ body {
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
   }
   .main-title {
     max-width: 360px;
@@ -684,7 +683,7 @@ body {
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
+    margin-bottom: 90;
     background-size: cover;
   }
   .hero-container {
@@ -749,6 +748,22 @@ body {
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 768px) {
+  .features-section__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .features-section__item {
+    max-width: 354px;
+  }
+  .features-section__icon {
+    width: 354px;
+  }
+  .features-section__title {
+    text-align: start;
+  }
+}
 .about-section {
   padding-bottom: 94px;
 }
