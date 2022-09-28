@@ -939,6 +939,7 @@ body {
 .container-clients {
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
 
 .clients-list {
@@ -964,6 +965,21 @@ body {
   border-color: var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .client-item {
+    width: 170px;
+    height: 92px;
+  }
+  .client-link:hover {
+    transition: border-color var(--trans-dur-time-fun), fill var(--trans-dur-time-fun);
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
