@@ -890,11 +890,6 @@ body {
   height: 44px;
   fill: var(--icon-color);
   border-radius: 50%;
-  transition: background-color var(--trans-dur-time-fun), fill var(--trans-dur-time-fun);
-}
-.team-icon-link:focus {
-  background-color: var(--accent-color);
-  fill: var(--white-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -909,6 +904,31 @@ body {
   .team-img {
     width: 354px;
     height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-item {
+    max-width: 270px;
+  }
+  .team-img {
+    width: 270px;
+    height: 260px;
+  }
+  .team-icon-link {
+    transition: background-color var(--trans-dur-time-fun), fill var(--trans-dur-time-fun);
+  }
+  .team-icon-link:focus, .team-icon-link:hover {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
   }
 }
 .clients-section {
