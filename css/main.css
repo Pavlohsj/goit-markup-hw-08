@@ -651,6 +651,9 @@ body {
 }
 .hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mobile@1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
@@ -860,8 +863,8 @@ body {
 }
 
 .team-img {
-  width: 450px;
-  height: 460px;
+  max-width: 450px;
+  max-height: 460px;
 }
 
 .img-inf-container {
@@ -988,12 +991,16 @@ body {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .inf-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-logo {
@@ -1002,14 +1009,16 @@ body {
   color: var(--white-color);
 }
 
-.address-container {
-  max-width: 231px;
-}
-
 .footer-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   row-gap: 9px;
+}
+
+.footer-item {
+  display: flex;
+  justify-content: center;
 }
 
 .location-link {
@@ -1018,6 +1027,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .footer-mail-link,
@@ -1031,8 +1041,9 @@ body {
 
 .links-box {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  margin-left: 70px;
 }
 
 .footer-links-title {
@@ -1045,11 +1056,6 @@ body {
   margin-bottom: 20px;
 }
 
-.soc-links-list {
-  display: flex;
-  gap: 10px;
-}
-
 .footer-icon-link {
   width: 44px;
   height: 44px;
@@ -1058,13 +1064,12 @@ body {
   fill: var(--white-color);
   transition: background-color var(--trans-dur-time-fun);
 }
-.footer-icon-link:hover, .footer-icon-link:focus {
+.footer-icon-link:focus {
   background-color: var(--accent-color);
 }
 
 .subscribe-box {
-  width: 570px;
-  margin-left: 93px;
+  width: 100%;
 }
 
 .subsribe-box-title {
@@ -1074,12 +1079,16 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
 }
 
 .subscribe-modal {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .subscribe-field-label {
