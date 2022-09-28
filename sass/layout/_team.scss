@@ -1,76 +1,76 @@
-.team-section {
-  padding-bottom: 94px;
-  padding-top: 94px;
-  background-color: var(--bg-color);
-}
+// .team-section {
+//   padding-bottom: 94px;
+//   padding-top: 94px;
+//   background-color: var(--bg-color);
+// }
 
-.team-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+// .team-container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
 
-.team-title {
-  margin-bottom: 50px;
-}
+// .team-title {
+//   margin-bottom: 50px;
+// }
 
-.team-list {
-  display: flex;
-  gap: 30px;
-}
+// .team-list {
+//   display: flex;
+//   gap: 30px;
+// }
 
-.team-item {
-  max-width: 270px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  background-color: var(--white-color);
-}
+// .team-item {
+//   max-width: 270px;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 0px 0px 4px 4px;
+//   background-color: var(--white-color);
+// }
 
-.team-img {
-  width: 270px;
-  height: 260px;
-}
+// .team-img {
+//   width: 270px;
+//   height: 260px;
+// }
 
-.img-inf-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 0;
-}
+// .img-inf-container {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding: 30px 0;
+// }
 
-.team-img-title {
-  margin-bottom: 10px;
+// .team-img-title {
+//   margin-bottom: 10px;
 
-  color: var(--main-black);
-  font-weight: 500;
-  line-height: 1.19;
-  font-size: 16px;
-}
+//   color: var(--main-black);
+//   font-weight: 500;
+//   line-height: 1.19;
+//   font-size: 16px;
+// }
 
-.team-img-text {
-  margin-bottom: 16px;
+// .team-img-text {
+//   margin-bottom: 16px;
 
-  color: var(--grey-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
+//   color: var(--grey-color);
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+// }
 
-.team-icon-link {
-  width: 44px;
-  height: 44px;
+// .team-icon-link {
+//   width: 44px;
+//   height: 44px;
 
-  fill: var(--icon-color);
-  border-radius: 50%;
+//   fill: var(--icon-color);
+//   border-radius: 50%;
 
-  transition: background-color var(--trans-dur-time-fun),
-    fill var(--trans-dur-time-fun);
+//   transition: background-color var(--trans-dur-time-fun),
+//     fill var(--trans-dur-time-fun);
 
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-    fill: var(--white-color);
-  }
-}
+//   &:hover,
+//   &:focus {
+//     background-color: var(--accent-color);
+//     fill: var(--white-color);
+//   }
+// }
