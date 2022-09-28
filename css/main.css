@@ -968,6 +968,12 @@ body {
   border-color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .client-item {
+    width: 226px;
+    height: 92px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .clients-section {
     padding-top: 94px;
@@ -1125,6 +1131,64 @@ body {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  .inf-box {
+    align-items: center;
+  }
+  .footer-links-title {
+    display: flex;
+    align-items: center;
+  }
+  .links-box {
+    align-items: baseline;
+  }
+  .subscribe-box {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .inf-box {
+    align-items: start;
+    margin-right: 70px;
+  }
+  .footer-list {
+    align-items: start;
+  }
+  .footer-item {
+    min-width: 231px;
+    justify-content: start;
+  }
+  .footer-icon-link:hover {
+    background-color: var(--accent-color);
+  }
+  .subscribe-box {
+    width: 100%;
+    min-width: 570px;
+    margin-left: 93px;
+  }
+  .subsribe-box-title {
+    text-align: start;
+  }
+  .subscribe-modal {
+    flex-direction: row;
+    gap: 0;
+  }
+  .subscribe-field-label {
+    width: 100%;
+  }
+}
 .portfolio-container {
   display: flex;
   flex-direction: column;

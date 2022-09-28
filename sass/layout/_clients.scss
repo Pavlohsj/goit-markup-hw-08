@@ -34,6 +34,13 @@
   }
 }
 
+@media screen and(min-width: 768px) {
+  .client-item {
+    width: 226px;
+    height: 92px;
+  }
+}
+
 @media screen and(min-width: 1200px) {
   .clients-section {
     padding-top: 94px;
