@@ -708,6 +708,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 30px;
 }
 
 .features-section__icon {
@@ -743,7 +744,6 @@ body {
   .features-section__list {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
   }
   .features-section__item {
     max-width: 354px;
@@ -766,7 +766,6 @@ body {
   .features-section__list {
     align-items: flex-start;
     flex-direction: row;
-    gap: 30px;
   }
   .features-section__item {
     max-width: 270px;
@@ -776,53 +775,54 @@ body {
   }
 }
 .about-section {
-  padding-bottom: 94px;
+  display: none;
 }
 
-.about-section__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .about-section {
+    display: block;
+    padding-bottom: 94px;
+  }
+  .about-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-section__title {
+    margin-bottom: 50px;
+  }
+  .about-section__list {
+    display: flex;
+    gap: 30px;
+  }
+  .about-section__item {
+    background-color: var(--white-color);
+  }
+  .about-section__item__img-box {
+    position: relative;
+  }
+  .about-section__item__img-box__picture {
+    max-width: 370px;
+  }
+  .about-section__item__img-box__text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
-
-.about-section__title {
-  margin-bottom: 50px;
-}
-
-.about-section__list {
-  display: flex;
-  gap: 30px;
-}
-
-.about-section__item {
-  background-color: var(--white-color);
-}
-
-.about-section__item__img-box {
-  position: relative;
-}
-.about-section__item__img-box__picture {
-  max-width: 370px;
-}
-.about-section__item__img-box__text {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 70px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-color);
-  background: rgba(47, 48, 58, 0.8);
-}
-
 .team-section {
   padding-bottom: 94px;
   padding-top: 94px;
