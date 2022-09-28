@@ -642,7 +642,6 @@ body {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  margin-bottom: 60px;
 }
 
 .hero-container {
@@ -666,8 +665,6 @@ body {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-tablet@1x.jpg);
     max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .main-title {
     max-width: 360px;
@@ -681,9 +678,6 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
     background-repeat: no-repeat;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 90;
     background-size: cover;
   }
   .hero-container {
@@ -712,6 +706,11 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
+.features-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .features-section__list {
   display: flex;
   flex-direction: column;
@@ -762,6 +761,26 @@ body {
   }
   .features-section__title {
     text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-section {
+    padding-top: 92px;
+    padding-bottom: 92px;
+  }
+  .features-section__container {
+    display: flex;
+  }
+  .features-section__list {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .features-section__item {
+    max-width: 270px;
+  }
+  .features-section__icon {
+    width: 270px;
   }
 }
 .about-section {
