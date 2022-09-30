@@ -7,10 +7,14 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  // margin-left: auto;
+  // margin-right: auto;
 }
 
 .clients-list {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -31,6 +35,12 @@
   &:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
+  }
+}
+
+@media screen and(min-width:480px) {
+  .clients-list {
+    flex-direction: row;
   }
 }
 
