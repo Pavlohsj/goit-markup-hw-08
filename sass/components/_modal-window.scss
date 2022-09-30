@@ -31,7 +31,11 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 // .modal-form {
