@@ -1253,7 +1253,7 @@ body {
 
 .portfolio-img-link {
   display: block;
-  max-width: 370px;
+  max-width: 450px;
   transition: box-shadow var(--trans-dur-time-fun);
 }
 .portfolio-img-link:focus, .portfolio-img-link:hover {
@@ -1266,8 +1266,7 @@ body {
 }
 
 .portfolio-img {
-  width: 370px;
-  height: 294px;
+  width: 100%;
 }
 
 .img-box-text {
