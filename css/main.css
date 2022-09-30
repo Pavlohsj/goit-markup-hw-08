@@ -646,7 +646,7 @@ body {
   }
 }
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mobile@1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/bcg-hero-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -657,6 +657,11 @@ body {
   padding-bottom: 118px;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/bcg-hero-mobile@2x.jpg);
+  }
+}
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -676,9 +681,16 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../../images/hero-tablet@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/bcg-hero-tablet.jpg);
     max-width: 768px;
   }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/bcg-hero-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
   .main-title {
     max-width: 360px;
   }
@@ -686,13 +698,20 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     background-color: var(--hero-bg-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/bcg-hero-desktop.jpg);
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/bcg-hero-desktop@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
   .main-title {
     font-size: 44px;
     line-height: 1.36;
@@ -701,6 +720,8 @@ body {
     max-width: 696px;
     margin-bottom: 30px;
   }
+}
+@media screen and (min-width: 1200px) {
   .hero-btn {
     width: 216px;
     padding: 10px 30px;
